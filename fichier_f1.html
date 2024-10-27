@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACL2F - Aéro-Club Frotey-lès-Lures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #accueil {
+            height: 100vh;
+            background-image: url('images/slide-2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: flex-start; 
+            align-items: center;
+            text-align: left; 
+            padding-left: 50px; 
+        }
+        #accueil h1, #accueil p {
+            color: white;
+        }
+        #img_act {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            padding: 5px 0; 
+        }
+        footer .social-icons img {
+            width: 30px; 
+            height: 30px;
+            margin: 0 8px; 
+        }
+        .card-img-fixed {
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 10px 10px 0 0; 
+        }
+        .card-custom {
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            background-color: #f9f9f9; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px; 
+        }
+        .form-container {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(96, 109, 173, 0.896);
+            padding: 30px;
+            background-color: #f8f9fa;
+        }
+        .form-title {
+            color: #007bff;
+        }
+        .contact-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-card h5 {
+            color: #007bff;
+        }
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            margin-top: 85px;
+        }
+        .small-image {
+            max-width: 1000px;
+            height: 100px;
+            margin-left: 600px;
+            margin-bottom: 1px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: blue; 
+            border-radius: 50%; 
+        }
+        .header-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .content-section {
+            padding: 40px 0;
+        }
+        .feature-list li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo_1.png" alt="logo" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activites">Activités ULM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Catégories d'ULM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pedagogiques">Moyens pédagogiques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carousel">Carrousel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#form">Formulaire de contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <section id="accueil">
+        <div>
+            <h1 class="display-4">Bienvenue à l'Aéro-Club Frotey-lès-Lures</h1>
+            <p class="lead">L’association vous offre la chance de pratiquer l’aviation légère dans un environnement exceptionnel. Venez piloter nos ULM.</p>
+        </div>
+    </section>
+
+    <!-- Section Activités -->
+    <section id="activites" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Activités</h2>
+            <p class="text-center">L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM. Association enregistrée n°04674 - Agrément n° AS70986858.</p>
+            <p class="text-center">Le siège social demeure 62, Avenue de la République, 70200 Lure.</p>
+
+            <div class="row align-items-center mt-5">
+                <div class="col-md-6">
+                    <img src="images/img_act.webp" id="img_act" alt="Activités ULM">
+                </div>
+                <div class="col-md-6">
+                    <p>L’aéro-club assure la formation de pilotes et d’instructeurs, et propose également des baptêmes de l’air.</p>
+                    <p>Pour cela, il assure les prestations complémentaires suivantes :</p>
+                    <ul>
+                        <li>Maintenance des ULM moteur, structure...</li>
+                        <li>Montage des ULM et de tout instrument de navigation : Compas, radio, transpondeur...</li>
+                        <li>Un service de restauration rapide.</li>
+                        <li>Un hébergement en proposant trois studios et six chambres pour les élèves stagiaires.</li>
+                        <li>Location d’emplacement ULM dans des hangars pour les particuliers.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row text-center mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-utensils fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Service de restauration</h5>
+                            <p class="card-text">Nous offrons un service de restauration rapide pour tous les membres et visiteurs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-hotel fa-2x mb-3 text-success"></i>
+                            <h5 class="card-title">Service d’hôtellerie</h5>
+                            <p class="card-text">Profitez de notre hébergement avec 3 studios et 6 chambres disponibles pour les élèves stagiaires.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-bus fa-2x mb-3 text-warning"></i>
+                            <h5 class="card-title">Service de bus</h5>
+                            <p class="card-text">Nous proposons également un service de transport pour faciliter l'accès à notre club.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section Catégories d'ULM -->
+    <section id="categories" class="py-5">
+        <div class="container">
+            <h1 class=" text-center">Catégorie D'ULM</h1>
+            <h6 class="text-center">Il existe 6 classes d’ULM :</h6>
+            <ul class="list-group list-group-horizontal justify-content-center">
+                <li class="list-group-item list-group-item-info">Le paramoteur</li>
+                <li class="list-group-item list-group-item-info">Le pendulaire</li>
+                <li class="list-group-item list-group-item-info">Le multiaxes</li>
+                <li class="list-group-item list-group-item-info">L’autogire ultraléger</li>
+                <li class="list-group-item list-group-item-info">L’aérostat ultraléger</li>
+                <li class="list-group-item list-group-item-info">L’hélicoptère ultraléger</li>
+            </ul>
+            <div class="row mt-3">
+                <div class="card-group">
+                    <div class="card card-custom d-flex flex-column">
+                        <img src="images/1.jpg" class="card-img-top card-img-fixed" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Baptême de l'air ULM Pendulaire</h5>
+                            <p class="card-text">Accompagné d'un instructeur diplômé, vous découvrez le vol en ULM. Survol de la région : découvrez les paysages superbes de Monfant-et-Vacheresse, Lyofans et Roye. 20 minutes de vol, 90 €.</p>
+                        </div>
+                    </div>
+                    <div class="card card-custom d-flex flex-column">
+                        <img src="images/2.jpg" class="card-img-top card-img-fixed" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Baptême de l'air ULM Multiaxes</h5>
+                            <p class="card-text">Laissez-vous emporter par le plaisir de voler, seul ou en famille, et partagez un moment inoubliable dans les airs. 20 minutes de vol, 90 €.</p>
+                        </div>
+                    </div>
+                    <div class="card card-custom d-flex flex-column">
+                        <img src="images/course-3.webp" class="card-img-top card-img-fixed" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Baptême de l'air ULM Paramoteur</h5>
+                            <p class="card-text">Découvrez les sensations uniques du paramoteur, au-dessus des plus beaux paysages. 20 minutes de vol, 90 €.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Moyens Pédagogiques -->
+    <section id="pedagogiques"></section>
+    <div class="content-section">
+        <div class="container">
+            <h2 class="text-center mb-3">Nos Moyens Pédagogiques</h2>
+            <p class="text-center mb-5">Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/104.jpg" height="400px" alt="Activités ULM" style="border-radius: 15px;">
+                </div>
+                <div class="col-md-6">
+                    <ul class="feature-list">
+                        <li>Une surface totale de 45 hectares dégagés.</li>
+                        <li>Deux pistes en X de 800 et 450 m.</li>
+                        <li>Un hydrosurface de 8 hectares.</li>
+                        <li>Trois hangars avec surface couverte de 4300 m².</li>
+                        <li>Locaux administratifs informatisés.</li>
+                        <li>Salle de cours multimédia avec simulateur de vol.</li>
+                        <li>Un atelier d'entretien et de réparation.</li>
+                        <li>Des capacités d'accueil et de restauration sur place.</li>
+                        <li>Connexion WIFI gratuit sur toute la base.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Section Carrousel -->
+    <section id="carousel" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Galerie photos</h2>
+            <p class="text-center">Nos membres et nos avions en pleine action</p>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/avion1.png" class="d-block w-50 mx-auto" alt="logo facebook">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/avion2.jpg" class="d-block w-50 mx-auto" alt="logo instagram">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/avion3.jpeg" class="d-block w-50 mx-auto" alt="logo twitter">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon  btn-primary" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon  btn-primary" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                  </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section Formulaire de contact -->
+    <section id="form"> 
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-container">
+                        <h2 class="mb-4 form-title">Formulaire de Contact</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse email" required>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="objet" class="form-label">Objet</label>
+                                <input type="text" class="form-control" id="objet" placeholder="Entrez l'objet de votre demande" required>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="besoinAide" class="form-label">Besoins d'aide</label>
+                                <textarea class="form-control" id="besoinAide" rows="4" placeholder="Décrivez vos besoins d'aide" required></textarea>
+                            </div>
+    
+                            <button type="submit" class="btn btn-primary w-25">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+    
+                
+                <div class="col-md-6">
+                    <div class="card contact-card p-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Coordonnées</h5>
+                            <p class="card-text"><strong>Téléphone :</strong> +33 01 60 56 60 60</p>
+                            <p class="card-text"><strong>Adresse :</strong> 62, Avenue de la République, 70200 Lure</p>
+                            <p class="card-text"><strong>Email :</strong> <a href="mailto:acf2l@gmail.com">acf2l@gmail.com</a></p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook" class="social-icon" style="width: 25px; height: 25px; margin-right: 5px;"></a>
+                                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram_icon.png" alt="Instagram" class="social-icon" style="width: 25px; height: 25px; margin-right: 5px;"></a>
+                                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin_icon.png" alt="LinkedIn" class="social-icon" style="width: 25px; height: 25px; margin-right: 5px;"></a>
+                                <a href="https://www.twitter.com" target="_blank"><img src="images/x.jpg" alt="Twitter" class="social-icon" style="width: 25px; height: 25px;"></a>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Aéro-Club Frotey-lès-Lures. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
